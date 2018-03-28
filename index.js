@@ -10,4 +10,5 @@ app.listen(port, (req,res) => {
 
 app.get('/', (req,res) => {
   console.log("A GET req to the server was recieved");
+  res.sendFile(__dirname + "/bitcoin.pdf");
 });

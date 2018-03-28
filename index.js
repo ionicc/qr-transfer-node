@@ -1,17 +1,23 @@
 var express = require('express');
+var qrTerminal = require('qrcode-terminal');
+
+var misc = require("./lib/misc.js");
+var constants = require("./lib/constants.js");
 
 var app = express();
 
-var qrTerminal = require('qrcode-terminal');
-
 const port = 3000 || process.env.PORT;
+
+var ipv4 = constants.IPv4;
 
 app.listen(port, (req,res) => {
   console.log("Server is live");
-  qrTerminal.generate("http://192.168.1.2:3000");
+  misc.header();
+  qrTerminal.generate(ipv4);
+
 });
 
 app.get('/', (req,res) => {
   console.log("A GET req to the server was recieved");
-  res.sendFile(__dirname + "/files_to_send" + "/bitcoin.pdf");
-});
+  res.sendFile(__dirname + "/files_to_send" + "/" + process.argv[2]);
+  });

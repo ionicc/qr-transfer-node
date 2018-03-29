@@ -12,6 +12,8 @@
     "chalk": "^2.3.2",
     "express": "^4.16.3",
     "figlet": "^1.2.0",
+    "freeport": "^1.0.5",
+    "get-port": "^3.2.0",
     "local-ipv4-address": "0.0.2",
     "qrcode-terminal": "^0.12.0"
   }

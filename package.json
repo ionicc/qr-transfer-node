@@ -1,10 +1,13 @@
 {
-  "name": "qr-transfer",
+  "name": "qrft",
   "version": "1.0.0",
   "description": "A Node app to send files over wifi using qrcodes in console",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "qrtransfer":"main.js"
   },
   "author": "codezoned",
   "contributors": [{

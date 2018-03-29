@@ -1,6 +1,7 @@
 # QR-FileTransfer done in NodeJS!
 
-Transfer files over Wifi using your Terminal
+Transfer files over Wifi using your Terminal!
+
 This project was inspired from [claudiodangelis](https://github.com/claudiodangelis)'s qr-filetransfer.
 You could check it out over [here](https://github.com/claudiodangelis/qr-filetransfer)
 
